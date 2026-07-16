@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kushan Dabare | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Kushan.D</div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio Sectors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="profile-img-container">
+                <!-- Replace with your actual image URL or path -->
+                <img src="profile.jpg" alt="Kushan Dabare" class="profile-img">
+            </div>
+            <h1>Hi, I'm <span class="highlight">Kushan Dabare</span></h1>
+            <h2>Business Process Improvement Specialist</h2>
+            <p>Bridging the gap between business operations and IT solutions using Lean Six Sigma, Python, and Power BI.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Results-oriented Business Solutions Specialist with a decade of progressive experience in the banking and financial services sector. Proven expertise in bridging the gap between business operations and IT solutions to drive process improvement, system automation, and organizational efficiency.</p>
+                <p>Currently advancing a Lean Six Sigma Black Belt project, I excel at leading core banking system implementations and cross-functional initiatives. Highly skilled in leveraging data analysis tools, including Python and Power BI, to monitor KPIs, deliver comprehensive ROI analyses, and provide actionable insights.</p>
+                
+                <div class="skills-container">
+                    <h3>Core Skills</h3>
+                    <div class="skills">
+                        <span class="skill-badge">Business Analysis</span>
+                        <span class="skill-badge">Lean Six Sigma</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Power BI</span>
+                        <span class="skill-badge">Project Management</span>
+                        <span class="skill-badge">Process Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Sectors Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">My Projects by Sector</h2>
+            
+            <!-- Sector Tabs -->
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="openTab(event, 'finance')">Finance & Banking</button>
+                <button class="tab-btn" onclick="openTab(event, 'education')">Education</button>
+                <button class="tab-btn" onclick="openTab(event, 'health')">Health</button>
+                <button class="tab-btn" onclick="openTab(event, 'tourism')">Tourism</button>
+                <button class="tab-btn" onclick="openTab(event, 'agriculture')">Agriculture</button>
+            </div>
+
+            <!-- Tab Content: Finance -->
+            <div id="finance" class="tab-content active">
+                <div class="project-card">
+                    <h3>Process Name: Core Banking System Implementation</h3>
+                    <div class="project-details">
+                        <p><strong>Current Challenge:</strong> Inefficient legacy systems causing delays in daily reconciliation and customer onboarding.</p>
+                        <p><strong>Solution:</strong> Directed the end-to-end implementation of a modern core banking system aligned with compliance standards.</p>
+                        <p><strong>Development:</strong> Utilized Python and Google Colab for data extraction and mapping. Monitored via Power BI dashboards.</p>
+                        <p><strong>Benefits:</strong> Automated daily reconciliation, enhanced decision-making speed, and provided actionable ROI analysis to management.</p>
+                    </div>
+                    <a href="#" class="btn-demo" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo / App</a>
+                </div>
+            </div>
+
+            <!-- Tab Content: Education (Template for you to update) -->
+            <div id="education" class="tab-content">
+                <div class="project-card">
+                    <h3>Process Name: Student Data Management System</h3>
+                    <div class="project-details">
+                        <p><strong>Current Challenge:</strong> Manual record keeping leading to data loss and slow report generation.</p>
+                        <p><strong>Solution:</strong> Developed a centralized database with automated reporting features.</p>
+                        <p><strong>Development:</strong> (Add your development stack / tools here)</p>
+                        <p><strong>Benefits:</strong> 50% reduction in admin workload, real-time student performance tracking.</p>
+                    </div>
+                    <a href="#" class="btn-demo" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo / App</a>
+                </div>
+            </div>
+
+            <!-- Tab Content: Health -->
+            <div id="health" class="tab-content">
+                <div class="project-card">
+                    <h3>Process Name: Health Clinic Patient Queue Flow</h3>
+                    <div class="project-details">
+                        <p><strong>Current Challenge:</strong> Long waiting times and unoptimized resource allocation.</p>
+                        <p><strong>Solution:</strong> Applied Lean Six Sigma methodologies to revamp patient intake processes.</p>
+                        <p><strong>Development:</strong> Data analysis using Python to identify bottlenecks.</p>
+                        <p><strong>Benefits:</strong> Reduced patient waiting time by 30% and optimized staff shifts.</p>
+                    </div>
+                    <a href="#" class="btn-demo" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo / App</a>
+                </div>
+            </div>
+
+            <!-- Tab Content: Tourism -->
+            <div id="tourism" class="tab-content">
+                <div class="project-card">
+                    <h3>Process Name: Hotel Booking Analytics Dashboard</h3>
+                    <div class="project-details">
+                        <p><strong>Current Challenge:</strong> Lack of visibility into seasonal booking trends and revenue forecasting.</p>
+                        <p><strong>Solution:</strong> Created an interactive BI dashboard for the management team.</p>
+                        <p><strong>Development:</strong> Advanced Excel and Power BI.</p>
+                        <p><strong>Benefits:</strong> Improved pricing strategies leading to a 15% increase in off-season revenue.</p>
+                    </div>
+                    <a href="#" class="btn-demo" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo / App</a>
+                </div>
+            </div>
+
+            <!-- Tab Content: Agriculture -->
+            <div id="agriculture" class="tab-content">
+                <div class="project-card">
+                    <h3>Process Name: Supply Chain Cost Optimization</h3>
+                    <div class="project-details">
+                        <p><strong>Current Challenge:</strong> High transportation costs and waste in agricultural supply chains.</p>
+                        <p><strong>Solution:</strong> Mapped the end-to-end process to eliminate inefficiencies.</p>
+                        <p><strong>Development:</strong> Business Process Mapping, ROI analysis.</p>
+                        <p><strong>Benefits:</strong> Streamlined delivery routes and cut logistical costs significantly.</p>
+                    </div>
+                    <a href="#" class="btn-demo" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo / App</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>077 477 3703</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>dkcdabare@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <p><a href="https://www.linkedin.com/in/kushan-dabare/" target="_blank">LinkedIn Profile</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>10/4, Delkada, Nugegoda, Colombo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Kushan Dabare. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
